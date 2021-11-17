@@ -1,9 +1,10 @@
 name: "Test"
 on:
-  pull-request:
+  pull_request:
     type: [labeled]
     branches:
       - '!master'
+      - '!main'
 
 jobs:
   build:

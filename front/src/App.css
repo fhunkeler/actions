@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.error {
+  color: #b60205;
+}
+
+.response {
+  color: #3dd34c;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

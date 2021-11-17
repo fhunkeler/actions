@@ -31,8 +31,8 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h2>Hello</h2>
-        {response && (<pre>{response}</pre>)}
-        {error && (<pre>{error}</pre>)}
+        {response && (<pre className="response">{response}</pre>)}
+        {error && (<pre className="error">{error}</pre>)}
       </header>
     </div>
   );

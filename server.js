@@ -9,9 +9,11 @@ app.use(cors({
 }))
 
 app.get("/hello", (req, res) => {
-  return res.json({
-    hello: "world"
-  });
+  return res
+    .status(200)
+    .json({
+      hello: "world"
+    });
 });
 
 export default app;

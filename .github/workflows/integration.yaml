@@ -2,9 +2,7 @@ name: "Test"
 on:
   pull_request:
     types: [labeled]
-    branches:
-      - '!master'
-      - '!main'
+    branches: [ master ]
 
 jobs:
   build:

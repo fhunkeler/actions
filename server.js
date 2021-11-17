@@ -10,7 +10,7 @@ app.use(cors({
 
 app.get("/hello", (req, res) => {
   return res
-    .status(200)
+    .status(201)
     .json({
       hello: "world"
     });

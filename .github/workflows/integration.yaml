@@ -1,14 +1,13 @@
-name: "Test"
+name: Test
+
 on:
   pull_request:
-    types: [labeled]
     branches: [ master ]
 
-jobs:
-  build:
-    if: ${{ github.event.label.name != 'DO_NOT_INTEGRATE' }}
-    runs-on: ubuntu-latest
 
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script

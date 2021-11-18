@@ -10,5 +10,4 @@ test('Server', async (t) => {
   console.log(res.body);
   t.is(res.status, 200);
   t.deepEqual(res.body, { hello: "world" });
-
 });

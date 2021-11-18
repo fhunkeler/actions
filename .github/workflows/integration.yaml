@@ -13,7 +13,7 @@ jobs:
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: echo "$GITHUB_CONTEXT"
+      run: echo "$GITHUB_CONTEXT"
     - name: Checkout
       uses: actions/checkout@v2
     - name: Use nodejs ${{ matrix.node-version }}
